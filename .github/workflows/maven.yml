@@ -28,7 +28,7 @@ jobs:
           file: Dockerfile
           push: true
           image: abetiousn/springboot-image-ci-cd
-          tags: v1, latest
+          tags: latest
           registry: docker.io
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
