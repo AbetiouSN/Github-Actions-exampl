@@ -21,7 +21,7 @@ jobs:
           cache: maven
       - name: Build with Maven
         run: mvn clean install
-      - name: Build & push Docker image
+      - name: Build & Push Docker image
         uses: docker/build-push-action@v5
         with:
           context: .
