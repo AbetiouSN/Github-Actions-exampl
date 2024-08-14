@@ -26,9 +26,9 @@ jobs:
         with:
           context: .
           file: Dockerfile
-          image: abetiousn/githubaction
+          image: abetiousn/springboot-image-ci-cd
           tags: v1, latest
           registry: docker.io
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
-
+          options: --no-cache
